@@ -1,0 +1,31 @@
+[package]
+name = "masterpasswd-core"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+aes = "0.8"
+aes-gcm = "0.10"
+pbkdf2 = "0.12"
+argon2 = "0.5"
+ed25519-dalek = { version = "2.1", features = ["std"] }
+subtle = "2.6"
+zeroize = { version = "1.8", features = ["derive"] }
+sha2 = "0.10"
+hmac = "0.12"
+rand = "0.8"
+typenum = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.11", features = ["json"] }
+base64 = "0.22"
+directories = "5"
+hex = "0.4"
+tokio = { version = "1", features = ["full"] }
+uniffi = { version = "0.32", features = ["build"] }
+
+[build-dependencies]
+uniffi_build = "0.32"
