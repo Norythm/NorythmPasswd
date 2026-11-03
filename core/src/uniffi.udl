@@ -1,0 +1,9 @@
+namespace masterpasswd_core {
+  AppEngine new_engine();
+};
+
+interface AppEngine {
+  boolean unlock(string password);
+  void lock();
+  string get_vault_json();
+};

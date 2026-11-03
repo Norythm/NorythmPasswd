@@ -1,0 +1,21 @@
+[package]
+name = "np"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+masterpasswd-core = { path = "../core" }
+clap = { version = "4.5", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+rpassword = "7.3"
+arboard = "3.4"
+colored = "2.2"
+serde_json = "1.0"
+rand = "0.8"
+directories = "5"
+hex = "0.4"
+base64 = "0.22"
+base32 = "0.5"
+zeroize = { version = "1.8", features = ["derive"] }
+totp-rs = { version = "5", features = ["otpauth"] }
+zip = { version = "2", default-features = false, features = ["deflate"] }
